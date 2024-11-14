@@ -1,0 +1,38 @@
+Inputs:     price of item and cash tendered
+Outputs:    change in dollars, change in pennies, and how many of
+            each bill or coin is needed to give the correct change.
+
+
+The program requires the user to input the price of an item and the cash tendered.
+Prompts will be needed to ask the user to do this.
+
+This program will need to:
+    caluculate the change of this transaction in dollars
+    calculate what this change is in pennies
+    list how many of each bill or coin is needed to give the correct change
+
+STEPS:
+    1)  have the string "price" be equal to the price of the item the user inputs
+    2)  convert this price to a floating point number
+    3)  mulitply this number by 100 to get the number into pennies for arithmetic
+    4)  convert this floating point number to an integer
+            the string "price" will now equal the price of the item the user inputs as an integer in pennies
+
+    5)  have the string "paid" be equal to the cash tendered the user inputs
+    6)  convert this price to a floating point number
+    7)  mulitply this number by 100 to get the number into pennies for arithmetic
+    8)  convert this floating point number to an integer
+            the string "paid" will now equal the cash tendered the user inputs as an integer in pennies
+
+    9)  have the string "dollars" equal the difference between cash tendered and price of the item
+    10) divide dollars by 100 to get the number in pennies
+    11) have the string "change" equal the difference between cash tendered and price of the item
+
+    12) displays the change in dollars and the change in pennies to the user
+
+    13) divde the change in pennies by 2000 with no remainder and display this
+        number to the user to get the amount of twenties needed for change
+    14) use modulus operator, %, to get the remainder
+    15) use this remainder to do the rest of the arithmetic
+        (for tens, fives, ones, quarters, dimes, nickles, and pennies)
+    16) every bill and coin should be displayed to the user to give the correct change
